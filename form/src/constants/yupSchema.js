@@ -26,7 +26,7 @@ export const RegisterSchema = yup.object().shape({
         .oneOf([yup.ref('password'), null], 'Şifreleriniz uyuşmamaktadır.'),
     termConditions: yup
         .boolean()
-      //  .required('Sözleşme Kabul edilmedilidir.')
+        .required('Sözleşme Kabul edilmelidir.')
       //  .oneOf([true], 'Sözleşme Kabul edilmedilidir.')
 
 

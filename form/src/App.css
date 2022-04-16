@@ -18,12 +18,24 @@
   position: absolute;
 }
 
-
-.formContainer{
+.mode{
+  margin-top: 15px;
+  position: absolute;
+  right: 5%;
+  cursor: pointer;
+}
+#light .formContainer{
   overflow: auto;
   width: 100%;
   background-color: #E5E5E5;
 
+}
+
+#dark .formContainer{
+  overflow: auto;
+  width: 100%;
+  background-color: rgb(44, 44, 44);
+  color: white;
 }
 
 .firstContainer{
@@ -35,13 +47,13 @@
 
 .logoContainer{
   margin-top:5%;
-  margin-right: 37%;
+  margin-right: 34%;
 }
 
 .firstContainer h1 {
   color: #444AFF;
-  margin-right: 30%;
-  font-size: 40px;
+  margin-right: 27%;
+  font-size: 41px;
   
 }
 
@@ -101,14 +113,26 @@ color: red;
 }
 
 .loginButton{
-  background-color:#444AFF;
   width: 45%;
   height: 50px;
   border-radius: 4px;
   border:0;
   text-align: center;
 }
+
+#light .loginButton{
+  background-color:#444AFF;
+}
+
+#dark .loginButton{
+  background-color: #FFBF5E;
+  ;
+}
 button:disabled{
 color:pink;
 }
 
+.lines{
+  position: relative;
+  right: -16%;
+}
