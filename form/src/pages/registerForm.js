@@ -87,8 +87,8 @@ function Register() {
                                     ({ values, handleChange, handleSubmit, errors }) =>
                                         <>
                                             <form>
-                                                <div className="deneme">
-                                                <div className="namedeneme">
+                                                <div className="containername">
+                                                <div className="inline">
                                                     <div className={clsx({ 'formError': !!errors.name })}>
                                                         <label className='required title'>İSİM</label>
                                                         <input
@@ -100,22 +100,23 @@ function Register() {
 
                                                         />
                                                         <span className="error">{errors.name}</span>
-                                                 </div>
-                                                 <div className={clsx({ 'formError': !!errors.lastName })}>
-                                                        <label className='required title'>SOYİSİM</label>
-                                                        <input
-                                                            type="text"
-                                                            name="lastName"
-                                                            placeholder='Soyismini gir'
-                                                            value={values.lastName}
-                                                            onChange={handleChange}
+                                                        </div> </div>
+                                                        <div className="inline">
+                                                        <div className={clsx({ 'formError': !!errors.lastName })}>
+                                                            <label className='required title'>SOYİSİM</label>
+                                                            <input
+                                                                type="text"
+                                                                name="lastName"
+                                                                placeholder='Soyismini gir'
+                                                                value={values.lastName}
+                                                                onChange={handleChange}
 
-                                                        />
-                                                        <span className="error">{errors.lastName}</span>
-
+                                                            />
+                                                            <span className="error">{errors.lastName}</span>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                </div>
+                                    
                                                 <div className={clsx({ 'formError': !!errors.mail })}>
                                                     <label className='required title'>E-POSTA</label>
                                                     <input

@@ -78,22 +78,25 @@
 }
 
 form{
-  position: relative;
 
+display:flex;
+justify-content: center;
+flex-direction: column;
 }
 form input{
   height: 40px;
-  width: 40%;
+  width: 80%;
   padding: 15px;
   margin:10px 0;
   border:0.1;
   border-radius: 4px;
+
+
 }
 
 form label{
-  position: relative;
-  display:block;
   margin-top: 15px;
+  display: block;
 }
 
 
@@ -113,8 +116,8 @@ color: red;
 }
 
 .loginButton{
-  width: 45%;
-  height: 50px;
+  width: 58%;
+  height: 40px;
   border-radius: 4px;
   border:0;
   text-align: center;
@@ -135,4 +138,16 @@ color:pink;
 .lines{
   position: relative;
   right: -16%;
+}
+     
+
+.inline {
+  display: inline-block;
+  width: 50%;
+
+}
+
+.containername{
+  text-align: center;
+  margin: 5px 46px;
 }
